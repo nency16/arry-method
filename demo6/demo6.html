@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>table</title>
+</head>
+<body>
+    <div style="margin: 10px; padding: 10px;">
+        <input type="text" id="fname" name="fname" placeholder="first name" required maxlength="8" />
+    </div>
+    <div style="margin: 10px; padding: 10px;">
+        <input type="text" id="lname" name="lname" placeholder="last name" required />
+    </div>
+    <div style="margin: 10px; padding: 10px;">
+        <input type="tel" id="phone" name="phone" placeholder="phone number" required />
+    </div>
+    <div style="margin: 10px; padding: 10px;">
+        <input type="number" id="age" name="age" placeholder="age" min="18" max="40" required />
+    </div>
+    <div style="margin: 10px; padding: 10px;">
+        <button type="btn" onclick="myfnction()">submite</button>
+    </div>
+<!-- search button  -->
+    <div>
+        <input type="text" id="search" style="background-color: transparent;" />
+        <button type="button" onclick="search()"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+            </svg></button>
+    </div>
+    <table style="padding: 10px; border: 1px solid black; margin: 10px;" >
+        <thead>
+            <!-- sort button -->
+            <th style="padding: 10px; border: 1px solid black;"><button
+                    style="background-color: transparent; border-color: transparent;" onclick="sortedRows()"><b>first
+                        name</b></button></th>
+            <th style="padding: 10px; border: 1px solid black;">last name</th>
+            <th style="padding: 10px; border: 1px solid black;">phone</th>
+            <th style="padding: 10px; border: 1px solid black;">age</th>
+            <th style="padding: 10px; border: 1px solid black;">delete</th>
+            <th style="padding: 10px; border: 1px solid black;">edit</th>
+        </thead>
+        <tbody id="demo">
+        </tbody>
+    </table>
+    <script src="./demo3.js"></script>
+</body>
+</html> 
